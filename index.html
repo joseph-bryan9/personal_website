@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Seña | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Default Mobile-first -->
     <div class="container">
       <!-- Header Section -->
       <header class="header-section">
-        <div class="logo"></div>
-        <div class="burger-menu"><div></div></div>
+        <div class="logo">
+          <a href="#"
+            ><img src="assets/figma_files/logo-white-2.PNG" alt=""
+          /></a>
+        </div>
+        <div class="burger-menu" onclick="toggleBurgerMenu()"><div></div></div>
       </header>
 
       <!-- Burger-menu Section Hidden by Default -->
@@ -24,16 +29,18 @@
 
       <!-- Showcase Section -->
       <section class="showcase-section">
-        <div class="video-container">
-          <video src="#"></video>
-        </div>
-        <div class="slogan">
-          <h1></h1>
-          <p></p>
+        <div class="showcase-content-flexbox">
+          <div class="video-container">
+            <video src="assets/video.mp4" autoplay muted loop></video>
+          </div>
+          <div class="slogan">
+            <p>Hi, I'm Joseph Seña</p>
+            <h1>I build ideas into working artworks</h1>
+          </div>
         </div>
         <div class="flexbox">
-          <a href=""></a>
-          <a href=""></a>
+          <a href="">Dark Mode</a>
+          <a href="" class="scroll-down">scroll down</a>
         </div>
       </section>
 
@@ -153,5 +160,6 @@
         <p>Designed & Built by Joseph Seña</p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

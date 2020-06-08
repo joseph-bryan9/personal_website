@@ -3,14 +3,178 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-a {
+  font-family: var(--roboto);
+  color: var(--primary-font);
   text-decoration: none;
 }
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* CSS Variables */
 :root {
   --primary-font: #fff;
   --bg-color: #333;
+  --roboto: "Roboto", sans-serif;
+}
+
+/* Main container of page */
+.container {
+  min-width: 22.5em;
+  height: 100vh;
+}
+
+/* Header Section */
+.header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-section .logo > a > img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Header - Burger Menu Icon Styles */
+
+.header-section .burger-menu {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-section .burger-menu:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.header-section .burger-menu > div {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.header-section .burger-menu:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+/* Header - Burger Menu Icon Styles (Toggle click) */
+.header-section.active .burger-menu:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header-section.active .burger-menu > div {
+  display: none;
+}
+
+.header-section.active .burger-menu:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Burger-menu Section Hidden by Default */
+.burger-menu-section {
+  display: none;
+}
+
+/* Showcase Section */
+.showcase-section {
+  position: relative;
+  padding: 20px;
+  height: 100vh;
+}
+
+.showcase-section .showcase-content-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.showcase-section .showcase-content-flexbox .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.showcase-section .showcase-content-flexbox .video-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.showcase-section .showcase-content-flexbox .video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-40%, -50%);
+}
+
+.showcase-section .showcase-content-flexbox .slogan {
+  z-index: 10;
+}
+
+.showcase-section .showcase-content-flexbox .slogan > p {
+  font-size: 28px;
+  color: var(--primary-font);
+  line-height: 1.2;
+  padding-bottom: 25px;
+}
+
+.showcase-section .showcase-content-flexbox .slogan > h1 {
+  width: 85%;
+  font-size: 50px;
+  color: var(--primary-font);
+  line-height: 1.2;
+}
+
+/* Showcase - Scroll down button styles  */
+.showcase-section .flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.showcase-section .flexbox .scroll-down {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
 }
