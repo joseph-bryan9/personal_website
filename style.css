@@ -335,9 +335,6 @@
 .contact-us-section {
   position: relative;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .contact-us-section .contact-us-background-section {
@@ -355,6 +352,17 @@
   transform: translateY(-15%);
   text-align: center;
   padding-top: 20px;
+}
+
+/* .contact-us-section .contact-us-background-section p {
+
+} */
+
+.contact-us-section .contact-us-background-section .form-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 95vh;
 }
 
 .contact-us-section .contact-us-background-section input,
