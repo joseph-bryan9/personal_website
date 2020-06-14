@@ -245,6 +245,21 @@
   padding-top: 20px;
 }
 
+.project-section .project-background-section .project-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.project-section .project-background-section .project-flexbox img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .project-section .flexbox {
   display: flex;
   flex-direction: row;
@@ -253,6 +268,36 @@
   position: relative;
   padding: 20px;
   width: 100%;
+}
+
+.project-section .project-background-section .project-flexbox .project-title p {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  width: 95%;
+  text-align: end;
+  margin: 15px 0;
+  margin-bottom: 20px;
+}
+
+.project-section
+  .project-background-section
+  .project-flexbox
+  .project-flex
+  > .project-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.project-section
+  .project-background-section
+  .project-flexbox
+  .project-flex
+  > .project-flex
+  p {
+  text-transform: uppercase;
+  margin-right: 15px;
 }
 
 .project-section .flexbox .scroll-down {
