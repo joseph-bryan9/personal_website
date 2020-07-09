@@ -11,6 +11,10 @@
       integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
   </head>
   <body>
     <!-- Default Mobile-first -->
@@ -34,16 +38,23 @@
       </section>
 
       <!-- Showcase Section -->
-      <section class="showcase-section">
+      <section id="home" class="showcase-section">
         <div class="showcase-content-flexbox">
           <div class="video-container">
-            <video src="assets/video.mp4" autoplay muted loop></video>
+            <!-- <video src="assets/video.mp4" autoplay muted loop></video> -->
+            <video src="assets/vid-bg.mp4" autoplay muted loop></video>
           </div>
-          <div class="slogan">
-            <p>Hi, I'm Joseph Seña</p>
-            <h1>I build ideas into working artworks.</h1>
+          <div
+            class="slogan animate__animated animate__bounceInDown animate__slow 3s"
+          >
+            <p class="hvr-wobble-to-bottom-right">Hi, I'm Joseph Seña</p>
+            <h1 class="hvr-wobble-to-top-right">
+              I build ideas into working artworks.
+            </h1>
           </div>
-          <div class="social-medias">
+          <div
+            class="social-medias animate__animated animate__bounceInLeft animate__delay-1s animate__slower 1s"
+          >
             <a href="#" class="github-logo"></a>
             <a href="#" class="twitter-logo"></a>
             <a href="#" class="ig-logo"></a>
@@ -51,8 +62,10 @@
           </div>
         </div>
         <div class="flexbox">
-          <a href="">Dark Mode</a>
-          <a href="" class="scroll-down"
+          <!-- <a href="">Dark Mode</a> -->
+          <a
+            href="#project-1"
+            class="scroll-down animate__animated animate__bounceInRight animate__delay-1s animate__slower 1s"
             ><i class="fa fa-chevron-down" aria-hidden="true"></i> scroll
             down</a
           >
@@ -60,36 +73,135 @@
       </section>
 
       <!-- Projects Section -->
-      <section class="project-section">
+      <!-- Project One -->
+      <section id="project-1" class="project-section">
         <div class="project-background-section">
           <h1>Things I've crafted,</h1>
           <div class="project-flexbox">
-            <!-- Project 1 -->
             <div class="projects">
               <div class="project-flex">
-                <div class="icon-flexbox">
+                <!-- <div class="icon-flexbox">
                   <a href="#" class="github-logo"></a>
                   <a href="#" class="external-logo"></a>
-                </div>
+                </div> -->
                 <img src="assets/project-1.png" alt="" />
                 <div class="project-title">
                   <p>technology company page</p>
                 </div>
                 <div class="project-description">
-                  <p>Description. Description. Description. Description.</p>
+                  <p>
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                  </p>
                 </div>
-                <div class="project-flex">
+                <!-- <div class="project-flex">
                   <p>javascript</p>
                   <p>css</p>
                   <p>html</p>
+                </div> -->
+                <div class="icon-flexbox">
+                  <a href="#" class="github-logo"></a>
+                  <a href="#" class="external-logo"></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="flexbox">
-          <a href="">Dark Mode</a>
-          <a href="" class="scroll-down"
+          <!-- <a href="">Dark Mode</a> -->
+          <a href="#project-2" class="scroll-down"
+            ><i class="fa fa-chevron-down" aria-hidden="true"></i> scroll
+            down</a
+          >
+        </div>
+      </section>
+
+      <!-- Project Two -->
+      <section id="project-2" class="project-section">
+        <div class="project-background-section">
+          <h1>Things I've crafted,</h1>
+          <div class="project-flexbox">
+            <div class="projects">
+              <div class="project-flex">
+                <!-- <div class="icon-flexbox">
+                        <a href="#" class="github-logo"></a>
+                        <a href="#" class="external-logo"></a>
+                      </div> -->
+                <img src="assets/project-2.png" alt="" />
+                <div class="project-title">
+                  <p>computer manufacturing page</p>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                  </p>
+                </div>
+                <!-- <div class="project-flex">
+                        <p>javascript</p>
+                        <p>css</p>
+                        <p>html</p>
+                      </div> -->
+                <div class="icon-flexbox">
+                  <a href="#" class="github-logo"></a>
+                  <a href="#" class="external-logo"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flexbox">
+          <!-- <a href="">Dark Mode</a> -->
+          <a href="#project-3" class="scroll-down"
+            ><i class="fa fa-chevron-down" aria-hidden="true"></i> scroll
+            down</a
+          >
+        </div>
+      </section>
+
+      <!-- Project Three -->
+      <section id="project-3" class="project-section">
+        <div class="project-background-section">
+          <h1>Things I've crafted,</h1>
+          <div class="project-flexbox">
+            <div class="projects">
+              <div class="project-flex">
+                <!-- <div class="icon-flexbox">
+                        <a href="#" class="github-logo"></a>
+                        <a href="#" class="external-logo"></a>
+                      </div> -->
+                <img src="assets/project-3.png" alt="" />
+                <div class="project-title">
+                  <p>coffee shop page</p>
+                </div>
+                <div class="project-description">
+                  <p>
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                    Description. Description. Description. Description.
+                  </p>
+                </div>
+                <!-- <div class="project-flex">
+                        <p>javascript</p>
+                        <p>css</p>
+                        <p>html</p>
+                      </div> -->
+                <div class="icon-flexbox">
+                  <a href="#" class="github-logo"></a>
+                  <a href="#" class="external-logo"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flexbox">
+          <!-- <a href="">Dark Mode</a> -->
+          <a href="#skills" class="scroll-down"
             ><i class="fa fa-chevron-down" aria-hidden="true"></i> scroll
             down</a
           >
@@ -97,7 +209,7 @@
       </section>
 
       <!-- Skills Section -->
-      <section class="skills-section">
+      <section id="skills" class="skills-section">
         <div class="skills-background-section">
           <h1>Recent technologies I've been working with,</h1>
           <div class="skill-grid">
@@ -127,8 +239,8 @@
           </div>
         </div>
         <div class="flexbox">
-          <a href="">Dark Mode</a>
-          <a href="" class="scroll-down"
+          <!-- <a href="">Dark Mode</a> -->
+          <a href="#contact-us" class="scroll-down"
             ><i class="fa fa-chevron-down" aria-hidden="true"></i> scroll
             down</a
           >
@@ -136,7 +248,7 @@
       </section>
 
       <!-- Contact Us Section-->
-      <section class="contact-us-section">
+      <section id="contact-us" class="contact-us-section">
         <div class="contact-us-background-section">
           <h1>Get in Touch</h1>
           <p></p>
@@ -154,8 +266,8 @@
           </div>
         </div>
         <div class="flexbox">
-          <a href="">Dark Mode</a>
-          <a href="" class="back-to-top"
+          <!-- <a href="">Dark Mode</a> -->
+          <a href="#home" class="back-to-top"
             ><i class="fa fa-chevron-up" aria-hidden="true"></i> back to top</a
           >
         </div>
@@ -167,5 +279,11 @@
       </footer>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+      });
+    </script>
   </body>
 </html>

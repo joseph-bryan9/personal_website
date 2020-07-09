@@ -19,6 +19,153 @@
   --roboto: "Roboto", sans-serif;
 }
 
+/* Hover Styles */
+/* Wobble To Bottom Right */
+@-webkit-keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.hvr-wobble-to-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-to-bottom-right:hover,
+.hvr-wobble-to-bottom-right:focus,
+.hvr-wobble-to-bottom-right:active {
+  -webkit-animation-name: hvr-wobble-to-bottom-right;
+  animation-name: hvr-wobble-to-bottom-right;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Wobble To Top Right */
+@-webkit-keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.hvr-wobble-to-top-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-to-top-right:hover,
+.hvr-wobble-to-top-right:focus,
+.hvr-wobble-to-top-right:active {
+  -webkit-animation-name: hvr-wobble-to-top-right;
+  animation-name: hvr-wobble-to-top-right;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
 /* Main container of page */
 .container {
   min-width: 22.5em;
@@ -43,6 +190,11 @@
   width: 30px;
   height: 30px;
   filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  transition: 0.5s;
+}
+
+.header-section .logo > a:hover > img {
+  transform: scale(1.1);
 }
 
 /* Header - Burger Menu Icon Styles */
@@ -111,6 +263,7 @@
   position: relative;
   padding: 20px;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .showcase-section .showcase-content-flexbox {
@@ -137,7 +290,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .showcase-section .showcase-content-flexbox .video-container video {
@@ -183,7 +336,8 @@
   height: 25px;
   display: inline-block;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
-    brightness(105%) contrast(102%);
+    brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  transition: 0.5s;
 }
 
 .showcase-section .showcase-content-flexbox .social-medias .github-logo {
@@ -206,11 +360,22 @@
   background-size: contain;
 }
 
+.showcase-section .showcase-content-flexbox .social-medias .github-logo:hover,
+.showcase-section .showcase-content-flexbox .social-medias .twitter-logo:hover,
+.showcase-section .showcase-content-flexbox .social-medias .ig-logo:hover,
+.showcase-section
+  .showcase-content-flexbox
+  .social-medias
+  .linkedin-logo:hover {
+  transform: scale(1.3);
+}
+
 /* Showcase - Scroll Down button styles  */
 .showcase-section .flexbox {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: flex-end;
   position: relative;
   width: 100%;
@@ -232,7 +397,7 @@
   padding: 20px;
   height: 95vh;
   background: rgb(16, 16, 16, 0.8);
-  clip-path: polygon(0 13%, 100% 11%, 100% 88%, 0 90%);
+  clip-path: polygon(0 12%, 100% 11%, 100% 89%, 0 90%);
 }
 
 .project-section .project-background-section h1 {
@@ -313,7 +478,8 @@
 .project-section .flexbox {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: flex-end;
   position: relative;
   padding: 20px;
@@ -375,8 +541,9 @@
 .skills-section .skills-background-section {
   padding: 20px;
   height: 95vh;
-  background: rgb(16, 16, 16, 0.8);
-  clip-path: polygon(0 13%, 100% 11%, 100% 88%, 0 90%);
+  background: rgb(16, 16, 16, 0.9);
+  /* clip-path: polygon(0 13%, 100% 11%, 100% 88%, 0 90%); */
+  clip-path: polygon(0 12%, 100% 11%, 100% 89%, 0 90%);
 }
 
 .skills-section .skills-background-section h1 {
@@ -422,7 +589,8 @@
 .skills-section .flexbox {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: flex-end;
   position: relative;
   padding: 20px;
@@ -445,8 +613,9 @@
 .contact-us-section .contact-us-background-section {
   padding: 20px;
   height: 95vh;
-  background: rgb(16, 16, 16, 0.8);
-  clip-path: polygon(0 13%, 100% 11%, 100% 88%, 0 90%);
+  background: rgb(16, 16, 16, 0.9);
+  /* clip-path: polygon(0 13%, 100% 11%, 100% 88%, 0 90%); */
+  clip-path: polygon(0 12%, 100% 11%, 100% 89%, 0 90%);
 }
 
 .contact-us-section .contact-us-background-section h1 {
@@ -514,7 +683,8 @@ textarea:focus {
 .contact-us-section .flexbox {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: flex-end;
   position: relative;
   padding: 20px;
@@ -537,5 +707,5 @@ footer {
 
 footer p {
   text-align: center;
-  font-size: 17.5px;
+  font-size: 13px;
 }
