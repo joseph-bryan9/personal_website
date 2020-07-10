@@ -19,153 +19,6 @@
   --roboto: "Roboto", sans-serif;
 }
 
-/* Hover Styles */
-/* Wobble To Bottom Right */
-@-webkit-keyframes hvr-wobble-to-bottom-right {
-  16.65% {
-    -webkit-transform: translate(8px, 8px);
-    transform: translate(8px, 8px);
-  }
-  33.3% {
-    -webkit-transform: translate(-6px, -6px);
-    transform: translate(-6px, -6px);
-  }
-  49.95% {
-    -webkit-transform: translate(4px, 4px);
-    transform: translate(4px, 4px);
-  }
-  66.6% {
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px);
-  }
-  83.25% {
-    -webkit-transform: translate(1px, 1px);
-    transform: translate(1px, 1px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-@keyframes hvr-wobble-to-bottom-right {
-  16.65% {
-    -webkit-transform: translate(8px, 8px);
-    transform: translate(8px, 8px);
-  }
-  33.3% {
-    -webkit-transform: translate(-6px, -6px);
-    transform: translate(-6px, -6px);
-  }
-  49.95% {
-    -webkit-transform: translate(4px, 4px);
-    transform: translate(4px, 4px);
-  }
-  66.6% {
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px);
-  }
-  83.25% {
-    -webkit-transform: translate(1px, 1px);
-    transform: translate(1px, 1px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-.hvr-wobble-to-bottom-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-wobble-to-bottom-right:hover,
-.hvr-wobble-to-bottom-right:focus,
-.hvr-wobble-to-bottom-right:active {
-  -webkit-animation-name: hvr-wobble-to-bottom-right;
-  animation-name: hvr-wobble-to-bottom-right;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-/* Wobble To Top Right */
-@-webkit-keyframes hvr-wobble-to-top-right {
-  16.65% {
-    -webkit-transform: translate(8px, -8px);
-    transform: translate(8px, -8px);
-  }
-  33.3% {
-    -webkit-transform: translate(-6px, 6px);
-    transform: translate(-6px, 6px);
-  }
-  49.95% {
-    -webkit-transform: translate(4px, -4px);
-    transform: translate(4px, -4px);
-  }
-  66.6% {
-    -webkit-transform: translate(-2px, 2px);
-    transform: translate(-2px, 2px);
-  }
-  83.25% {
-    -webkit-transform: translate(1px, -1px);
-    transform: translate(1px, -1px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-@keyframes hvr-wobble-to-top-right {
-  16.65% {
-    -webkit-transform: translate(8px, -8px);
-    transform: translate(8px, -8px);
-  }
-  33.3% {
-    -webkit-transform: translate(-6px, 6px);
-    transform: translate(-6px, 6px);
-  }
-  49.95% {
-    -webkit-transform: translate(4px, -4px);
-    transform: translate(4px, -4px);
-  }
-  66.6% {
-    -webkit-transform: translate(-2px, 2px);
-    transform: translate(-2px, 2px);
-  }
-  83.25% {
-    -webkit-transform: translate(1px, -1px);
-    transform: translate(1px, -1px);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-.hvr-wobble-to-top-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-wobble-to-top-right:hover,
-.hvr-wobble-to-top-right:focus,
-.hvr-wobble-to-top-right:active {
-  -webkit-animation-name: hvr-wobble-to-top-right;
-  animation-name: hvr-wobble-to-top-right;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
 /* Main container of page */
 .container {
   min-width: 22.5em;
@@ -312,6 +165,11 @@
   color: var(--primary-font);
   line-height: 1.2;
   padding-bottom: 25px;
+  transition: 0.5s;
+}
+
+.showcase-section .showcase-content-flexbox .slogan > p:hover {
+  transform: rotate(-2deg);
 }
 
 .showcase-section .showcase-content-flexbox .slogan > h1 {
@@ -320,6 +178,11 @@
   color: var(--primary-font);
   line-height: 1.2;
   padding-bottom: 20px;
+  transition: 0.5s;
+}
+
+.showcase-section .showcase-content-flexbox .slogan > h1:hover {
+  transform: rotate(2deg);
 }
 
 .showcase-section .showcase-content-flexbox .social-medias {
@@ -327,7 +190,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 65%;
+  top: 70%;
 }
 
 .showcase-section .showcase-content-flexbox .social-medias > a {
@@ -391,90 +254,93 @@
 .project-section {
   position: relative;
   height: 100vh;
-}
-
-.project-section .project-background-section {
-  padding: 20px;
-  height: 95vh;
-  background: rgb(16, 16, 16, 0.8);
-  clip-path: polygon(0 12%, 100% 11%, 100% 89%, 0 90%);
-}
-
-.project-section .project-background-section h1 {
-  position: absolute;
-  font-size: 25px;
-  font-weight: lighter;
-  top: 15%;
-  left: 20%;
-  transform: translate(-20%, -15%);
-  padding-top: 20px;
-}
-
-.project-section .project-background-section .project-flexbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  overflow-x: hidden;
 }
 
-.project-section .project-background-section .project-flexbox .projects {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.project-section h1 {
+  margin: 10px 0 40px;
 }
 
-.project-section .project-background-section .project-flexbox .icon-flexbox {
+.project-section .project-container {
+  background: rgb(221, 213, 213, 0.7);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
+}
+
+.project-section .project-container img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  padding: 10px;
+}
+
+.project-section .project-container-2 {
+  width: 90%;
+  margin: 10px 20px;
+}
+
+.project-section .project-container-2 h1 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 10px 0 20px;
+  text-align: right;
+}
+
+.project-section .project-container-2 p {
+  padding: 0 15px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.project-section .project-container-2 div {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 20px;
+  justify-content: center;
+  padding-top: 30px;
 }
 
-.project-section
-  .project-background-section
-  .project-flexbox
-  .icon-flexbox
-  .github-logo,
-.project-section
-  .project-background-section
-  .project-flexbox
-  .icon-flexbox
-  .external-logo {
-  margin-right: 15px;
-  margin-bottom: 20px;
+.project-section .project-container-2 div > a {
   width: 25px;
   height: 25px;
   display: inline-block;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
-    brightness(105%) contrast(102%);
+    brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  transition: 0.5s;
+  margin: 0 10px;
 }
 
-.project-section
-  .project-background-section
-  .project-flexbox
-  .icon-flexbox
-  .github-logo {
+.project-section .project-container-2 div .github-logo {
   background: url("assets/github-logo.svg");
   background-size: contain;
 }
 
-.project-section
-  .project-background-section
-  .project-flexbox
-  .icon-flexbox
-  .external-logo {
-  background: url("assets/external-icon.svg");
+.project-section .project-container-2 div .external-logo {
+  background: url("assets/external-logo.svg");
   background-size: contain;
 }
 
-.project-section .project-background-section .project-flexbox img {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
+.project-section .project-container-2 div .ref-logo {
+  background: url("assets/ref-logo.svg");
+  background-size: contain;
 }
 
+.project-section .project-container-2 div .github-logo:hover,
+.project-section .project-container-2 div .external-logo:hover,
+.project-section .project-container-2 div .ref-logo:hover {
+  transform: rotate(7deg);
+}
+
+/* Project-section - Scroll Down button styles  */
 .project-section .flexbox {
   display: flex;
   flex-direction: row;
@@ -482,219 +348,180 @@
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
-  padding: 20px;
   width: 100%;
-}
-
-.project-section .project-background-section .project-flexbox .project-title p {
-  text-transform: capitalize;
-  font-size: 25px;
-  font-weight: bold;
-  width: 95%;
-  text-align: end;
-  margin: 15px 0;
-  margin-bottom: 20px;
-}
-
-.project-section
-  .project-background-section
-  .project-flexbox
-  .project-description
-  p {
-  text-align: right;
-  width: 95%;
-  margin: 35px 0;
-}
-
-.project-section
-  .project-background-section
-  .project-flexbox
-  .project-flex
-  > .project-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.project-section
-  .project-background-section
-  .project-flexbox
-  .project-flex
-  > .project-flex
-  p {
-  text-transform: uppercase;
-  margin-right: 15px;
+  top: 15%;
 }
 
 .project-section .flexbox .scroll-down {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: bold;
+  margin: 0 20px;
 }
 
 /* Skills Section */
 .skills-section {
   position: relative;
   height: 100vh;
-}
-
-.skills-section .skills-background-section {
-  padding: 20px;
-  height: 95vh;
-  background: rgb(16, 16, 16, 0.9);
-  /* clip-path: polygon(0 13%, 100% 11%, 100% 88%, 0 90%); */
-  clip-path: polygon(0 12%, 100% 11%, 100% 89%, 0 90%);
-}
-
-.skills-section .skills-background-section h1 {
-  position: absolute;
-  font-size: 25px;
-  font-weight: lighter;
-  top: 15%;
-  transform: translateY(-15%);
-  text-align: center;
-  padding-top: 20px;
-}
-
-.skills-section .skills-background-section .skill-grid {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-}
-
-.skills-section .skills-background-section .skill-grid > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
-.skills-section .skills-background-section .skill-grid > div > img {
-  width: 85%;
-  height: 85%;
-  display: block;
-  margin: 0 auto;
-}
-
-.skills-section .skills-background-section .skill-grid > div > span {
-  font-weight: bold;
+.skills-section h1 {
+  margin: 10px 85px 40px;
   text-align: center;
-  padding: 10px 0;
 }
 
+.skills-section .skills-container {
+  background: rgb(221, 213, 213, 0.7);
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.skills-section .skills-container a {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  transition: 0.5s;
+  margin: 0 10px;
+}
+
+.skills-section .skills-container .git-logo {
+  background: url("assets/git-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .css-logo {
+  background: url("assets/css3-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .mysql-logo {
+  background: url("assets/mysql-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .python-logo {
+  background: url("assets/python-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .vue-logo {
+  background: url("assets/vue-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .html-logo {
+  background: url("assets/html-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .sass-logo {
+  background: url("assets/sass-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .js-logo {
+  background: url("assets/js-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .figma-logo {
+  background: url("assets/figma-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .wp-logo {
+  background: url("assets/wp-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .shopify-logo {
+  background: url("assets/shopify-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .react-logo {
+  background: url("assets/react-logo.svg") no-repeat center center/contain;
+}
+
+.skills-section .skills-container .git-logo:hover {
+  transform: rotate(-7deg);
+}
+
+.skills-section .skills-container > div > p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Skills-section - Scroll Down button styles  */
 .skills-section .flexbox {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
-  padding: 20px;
   width: 100%;
+  top: 15%;
 }
 
 .skills-section .flexbox .scroll-down {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: bold;
+  margin: 0 20px;
 }
 
 /* Contact Us Section */
-
 .contact-us-section {
   position: relative;
   height: 100vh;
-}
-
-.contact-us-section .contact-us-background-section {
-  padding: 20px;
-  height: 95vh;
-  background: rgb(16, 16, 16, 0.9);
-  /* clip-path: polygon(0 13%, 100% 11%, 100% 88%, 0 90%); */
-  clip-path: polygon(0 12%, 100% 11%, 100% 89%, 0 90%);
-}
-
-.contact-us-section .contact-us-background-section h1 {
-  position: absolute;
-  font-size: 25px;
-  font-weight: lighter;
-  top: 15%;
-  transform: translateY(-15%);
-  text-align: center;
-  padding-top: 20px;
-}
-
-/* .contact-us-section .contact-us-background-section p {
-
-} */
-
-.contact-us-section .contact-us-background-section .form-flexbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 95vh;
+  align-items: center;
+  overflow-x: hidden;
 }
 
-.contact-us-section .contact-us-background-section input,
-textarea {
-  background: rgba(255, 255, 255, 0.5);
-  padding: 10px 16px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 4px;
-  font-size: 1em;
-  transition: 0.3s ease-in-out;
+.contact-us-section .contact-us-container {
+  background: rgb(221, 213, 213, 0.7);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
 }
 
-.contact-us-section .contact-us-background-section textarea {
-  resize: none;
-  margin-bottom: 30px;
+.contact-us-section .contact-us-container div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-us-section .contact-us-background-section input:focus,
-textarea:focus {
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.8), 1px 13px 10px rgba(0, 0, 0, 0.8);
+.contact-us-section .contact-us-container div .form-container {
+  /* margin: 20px; */
 }
 
-.contact-us-section .contact-us-background-section button {
-  background: rgba(73, 72, 72, 0.9);
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  padding: 10px 12px;
-  border-radius: 4px;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-  display: inline-block;
-  font-size: 1em;
-  width: 50%;
-  margin: 0 auto;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.contact-us-section .contact-us-background-section button:hover {
-  background: rgba(88, 87, 87, 0.9);
-}
-
+/* Contact Us - Scroll Down button styles  */
 .contact-us-section .flexbox {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
-  padding: 20px;
   width: 100%;
+  top: 15%;
 }
 
-.contact-us-section .flexbox .back-to-top {
+.contact-us-section .flexbox .scroll-down {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: bold;
+  margin: 0 20px;
 }
 
 /* Footer */
