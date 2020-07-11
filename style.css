@@ -19,10 +19,24 @@
   --roboto: "Roboto", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Main container of page */
 .container {
   min-width: 22.5em;
   height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -webkit-scroll-behavior: smooth;
+  -webkit-scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
+  -webkit-scroll-snap-align: center;
 }
 
 /* Header Section */
@@ -116,7 +130,6 @@
   position: relative;
   padding: 20px;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 .showcase-section .showcase-content-flexbox {
@@ -133,7 +146,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .showcase-section .showcase-content-flexbox .video-container:after {
@@ -258,7 +270,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .project-section h1 {
@@ -367,7 +378,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .skills-section h1 {
@@ -481,7 +491,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .contact-us-section .contact-us-container {

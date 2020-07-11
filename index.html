@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Default Mobile-first -->
@@ -256,9 +260,12 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
-      var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 800,
-      });
+      var scroll = new SmoothScroll(
+        'a[href="#project-1"], a[href="#project-2"], a[href="#project-3"], a[href="#skills"], a[href="#contact-us"], a[href="#home"]',
+        {
+          speed: 800,
+        }
+      );
     </script>
   </body>
 </html>
