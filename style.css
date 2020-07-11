@@ -25,18 +25,10 @@ body {
 
 /* Main container of page */
 .container {
-  min-width: 22.5em;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  -webkit-scroll-behavior: smooth;
-  -webkit-scroll-snap-type: y mandatory;
-}
-
-section {
-  scroll-snap-align: center;
-  -webkit-scroll-snap-align: center;
+  min-width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Section */
@@ -65,7 +57,6 @@ section {
 }
 
 /* Header - Burger Menu Icon Styles */
-
 .header-section .burger-menu {
   position: relative;
   width: 30px;
@@ -146,6 +137,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
+  background: #333;
 }
 
 .showcase-section .showcase-content-flexbox .video-container:after {
@@ -158,7 +150,8 @@ section {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.showcase-section .showcase-content-flexbox .video-container video {
+.showcase-section .showcase-content-flexbox .video-container video,
+.showcase-section .showcase-content-flexbox .video-container img {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
@@ -249,7 +242,6 @@ section {
 .showcase-section .flexbox {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
@@ -270,13 +262,22 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
-.project-section h1 {
+.project-section .project-content-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 95vh;
+}
+
+.project-section .project-content-flexbox h1 {
   margin: 10px 0 40px;
 }
 
-.project-section .project-container {
+.project-section .project-content-flexbox .project-container {
   background: rgb(221, 213, 213, 0.7);
   width: 100%;
   height: auto;
@@ -288,39 +289,38 @@ section {
   border-radius: 20px;
 }
 
-.project-section .project-container img {
+.project-section .project-content-flexbox .project-container img {
   width: 100%;
   height: auto;
   filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
   padding: 10px;
 }
 
-.project-section .project-container-2 {
-  width: 90%;
-  margin: 10px 20px;
+.project-section .project-content-flexbox .project-container-2 {
+  width: 100%;
+  margin: 10px 0;
 }
 
-.project-section .project-container-2 h1 {
+.project-section .project-content-flexbox .project-container-2 h1 {
   text-transform: capitalize;
   font-size: 20px;
   margin: 10px 0 20px;
   text-align: right;
 }
 
-.project-section .project-container-2 p {
-  padding: 0 15px;
+.project-section .project-content-flexbox .project-container-2 p {
   line-height: 1.6;
   font-weight: 600;
 }
 
-.project-section .project-container-2 div {
+.project-section .project-content-flexbox .project-container-2 div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 30px;
 }
 
-.project-section .project-container-2 div > a {
+.project-section .project-content-flexbox .project-container-2 div > a {
   width: 25px;
   height: 25px;
   display: inline-block;
@@ -330,24 +330,44 @@ section {
   margin: 0 10px;
 }
 
-.project-section .project-container-2 div .github-logo {
+.project-section
+  .project-content-flexbox
+  .project-container-2
+  div
+  .github-logo {
   background: url("assets/github-logo.svg");
   background-size: contain;
 }
 
-.project-section .project-container-2 div .external-logo {
+.project-section
+  .project-content-flexbox
+  .project-container-2
+  div
+  .external-logo {
   background: url("assets/external-logo.svg");
   background-size: contain;
 }
 
-.project-section .project-container-2 div .ref-logo {
+.project-section .project-content-flexbox .project-container-2 div .ref-logo {
   background: url("assets/ref-logo.svg");
   background-size: contain;
 }
 
-.project-section .project-container-2 div .github-logo:hover,
-.project-section .project-container-2 div .external-logo:hover,
-.project-section .project-container-2 div .ref-logo:hover {
+.project-section
+  .project-content-flexbox
+  .project-container-2
+  div
+  .github-logo:hover,
+.project-section
+  .project-content-flexbox
+  .project-container-2
+  div
+  .external-logo:hover,
+.project-section
+  .project-content-flexbox
+  .project-container-2
+  div
+  .ref-logo:hover {
   transform: rotate(7deg);
 }
 
@@ -355,19 +375,16 @@ section {
 .project-section .flexbox {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
   width: 100%;
-  top: 15%;
 }
 
 .project-section .flexbox .scroll-down {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: bold;
-  margin: 0 20px;
 }
 
 /* Skills Section */
@@ -378,14 +395,23 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
-.skills-section h1 {
-  margin: 10px 85px 40px;
+.skills-section .skills-content-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 95vh;
+}
+
+.skills-section .skills-content-flexbox h1 {
+  margin: 15px 0 25px;
   text-align: center;
 }
 
-.skills-section .skills-container {
+.skills-section .skills-content-flexbox .skills-container {
   background: rgb(221, 213, 213, 0.7);
   width: 100%;
   height: auto;
@@ -393,13 +419,17 @@ section {
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 10px;
   justify-items: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
-.skills-section .skills-container a {
+.skills-section .skills-content-flexbox .skills-container > div {
+  padding: 10px;
+}
+
+.skills-section .skills-content-flexbox .skills-container a {
   width: 60px;
   height: 60px;
   display: inline-block;
@@ -408,59 +438,59 @@ section {
   margin: 0 10px;
 }
 
-.skills-section .skills-container .git-logo {
+.skills-section .skills-content-flexbox .skills-container .git-logo {
   background: url("assets/git-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .css-logo {
+.skills-section .skills-content-flexbox .skills-container .css-logo {
   background: url("assets/css3-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .mysql-logo {
+.skills-section .skills-content-flexbox .skills-container .mysql-logo {
   background: url("assets/mysql-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .python-logo {
+.skills-section .skills-content-flexbox .skills-container .python-logo {
   background: url("assets/python-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .vue-logo {
+.skills-section .skills-content-flexbox .skills-container .vue-logo {
   background: url("assets/vue-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .html-logo {
+.skills-section .skills-content-flexbox .skills-container .html-logo {
   background: url("assets/html-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .sass-logo {
+.skills-section .skills-content-flexbox .skills-container .sass-logo {
   background: url("assets/sass-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .js-logo {
+.skills-section .skills-content-flexbox .skills-container .js-logo {
   background: url("assets/js-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .figma-logo {
+.skills-section .skills-content-flexbox .skills-container .figma-logo {
   background: url("assets/figma-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .wp-logo {
+.skills-section .skills-content-flexbox .skills-container .wp-logo {
   background: url("assets/wp-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .shopify-logo {
+.skills-section .skills-content-flexbox .skills-container .shopify-logo {
   background: url("assets/shopify-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .react-logo {
+.skills-section .skills-content-flexbox .skills-container .react-logo {
   background: url("assets/react-logo.svg") no-repeat center center/contain;
 }
 
-.skills-section .skills-container .git-logo:hover {
+.skills-section .skills-content-flexbox .skills-container .git-logo:hover {
   transform: rotate(-7deg);
 }
 
-.skills-section .skills-container > div > p {
+.skills-section .skills-content-flexbox .skills-container > div > p {
   text-align: center;
   padding-top: 10px;
 }
@@ -473,14 +503,12 @@ section {
   align-items: flex-end;
   position: relative;
   width: 100%;
-  top: 15%;
 }
 
 .skills-section .flexbox .scroll-down {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: bold;
-  margin: 0 20px;
 }
 
 /* Contact Us Section */
@@ -491,6 +519,15 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+}
+
+.contact-us-content-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 95vh;
 }
 
 .contact-us-section .contact-us-container {
@@ -523,14 +560,12 @@ section {
   align-items: flex-end;
   position: relative;
   width: 100%;
-  top: 15%;
 }
 
 .contact-us-section .flexbox .scroll-down {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: bold;
-  margin: 0 20px;
 }
 
 /* Footer */
