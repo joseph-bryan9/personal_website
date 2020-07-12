@@ -3,20 +3,26 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--roboto);
+  font-family: var(--opensans);
+  letter-spacing: 2px;
+  /* line-height: 32px; */
   color: var(--primary-font);
   text-decoration: none;
   text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
 /* CSS Variables */
 :root {
   --primary-font: #fff;
   --bg-color: #333;
-  --roboto: "Roboto", sans-serif;
+  --sourcesansprimary: "Source Sans Pro", sans-serif;
+  --sourcesanssecondary: "Source Sans Pro", sans-serif;
+  --opensans: "Open Sans Condensed", sans-serif;
 }
 
 body {
@@ -179,6 +185,7 @@ body {
 
 .showcase-section .showcase-content-flexbox .slogan > h1 {
   width: 85%;
+  font-family: var(--sourcesansprimary);
   font-size: 50px;
   color: var(--primary-font);
   line-height: 1.2;
@@ -275,6 +282,7 @@ body {
 
 .project-section .project-content-flexbox h1 {
   margin: 10px 0 40px;
+  font-family: var(--sourcesanssecondary);
 }
 
 .project-section .project-content-flexbox .project-container {
@@ -303,6 +311,7 @@ body {
 
 .project-section .project-content-flexbox .project-container-2 h1 {
   text-transform: capitalize;
+  font-family: var(--sourcesanssecondary);
   font-size: 20px;
   margin: 10px 0 20px;
   text-align: right;
@@ -522,7 +531,7 @@ body {
   padding: 20px;
 }
 
-.contact-us-content-flexbox {
+.contact-us-section .contact-us-content-flexbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -530,7 +539,7 @@ body {
   height: 95vh;
 }
 
-.contact-us-section .contact-us-container {
+.contact-us-section .contact-us-content-flexbox .contact-us-container {
   background: rgb(221, 213, 213, 0.7);
   width: 100%;
   height: auto;
@@ -542,14 +551,46 @@ body {
   border-radius: 20px;
 }
 
-.contact-us-section .contact-us-container div {
+.contact-us-section .contact-us-content-flexbox .contact-us-container div {
+  padding: 30px 20px;
+}
+
+.contact-us-section .contact-us-content-flexbox .contact-us-container div h1 {
   padding: 20px;
+}
+
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
 }
 
-.contact-us-section .contact-us-container div .form-container {
-  /* margin: 20px; */
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container
+  .input-name,
+.input-email,
+.textarea-message {
+  margin: 10px 0 20px;
+  border: none;
+  border-bottom: 2px solid rgb(128, 128, 128);
+}
+
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container
+  .textarea-message {
+  resize: vertical;
+  max-height: 300px;
+  min-height: 200px;
 }
 
 /* Contact Us - Scroll Down button styles  */
