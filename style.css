@@ -8,7 +8,8 @@
   /* line-height: 32px; */
   color: var(--primary-font);
   text-decoration: none;
-  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
+  /* text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4); */
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* Font */
@@ -600,7 +601,7 @@ body {
 }
 
 .contact-us-section .contact-us-content-flexbox .contact-us-container {
-  background: rgb(221, 213, 213, 0.7);
+  /* background: rgb(221, 213, 213, 0.7); */
   width: 100%;
   height: auto;
   display: flex;
@@ -609,6 +610,10 @@ body {
   align-items: center;
   filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
   border-radius: 20px;
+}
+
+.contact-us-section .contact-us-content-flexbox .contact-us-container:focus {
+  background: rgb(221, 213, 213);
 }
 
 .contact-us-section .contact-us-content-flexbox .contact-us-container div {
@@ -654,12 +659,28 @@ button:focus {
   .input-name,
 .input-email,
 .textarea-message {
-  margin: 5px 0 25px;
-  padding: 10px 0;
+  margin: 20px 0 25px;
+  padding: 10px 5px;
   border: none;
   border-bottom: 2px solid rgb(128, 128, 128);
   background: none;
   font-size: 16px;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container
+  .input-name:focus,
+.input-email:focus,
+.textarea-message:focus {
+  background: rgb(255, 255, 255, 0.8);
+  border: 2px solid rgb(128, 128, 128);
+  border-radius: 8px;
+  color: #333;
+  text-shadow: none;
 }
 
 .contact-us-section
@@ -671,6 +692,37 @@ button:focus {
   resize: vertical;
   max-height: 300px;
   min-height: 100px;
+}
+
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container
+  button {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  letter-spacing: 3px;
+  text-shadow: none;
+  background: #fff;
+  color: rgb(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container
+  button:hover {
+  background: rgb(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 /* Contact Us - Scroll Down button styles  */
