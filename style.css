@@ -467,7 +467,7 @@ body {
 }
 
 .skills-section .skills-content-flexbox .skills-container {
-  background: rgb(221, 213, 213, 0.7);
+  /* background: rgb(221, 213, 213, 0.7); */
   width: 100%;
   height: auto;
   filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
@@ -624,6 +624,11 @@ body {
   padding: 20px;
 }
 
+.contact-us-section .contact-us-content-flexbox .contact-us-container div p {
+  padding: 15px 0 50px;
+  padding-left: 20px;
+}
+
 .contact-us-section
   .contact-us-content-flexbox
   .contact-us-container
@@ -659,13 +664,32 @@ button:focus {
   .input-name,
 .input-email,
 .textarea-message {
-  margin: 20px 0 25px;
+  margin: 20px 0 50px;
   padding: 10px 5px;
   border: none;
   border-bottom: 2px solid rgb(128, 128, 128);
   background: none;
   font-size: 16px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
+  --webkit-transition: 0.3s ease-in-out;
+  --moz-transition: 0.3s ease-in-out;
+  --o-transition: 0.3s ease-in-out;
+}
+
+/* Placeholder style for Input fields */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(128, 128, 128, 0.8);
+  opacity: 1; /* Firefox */
+  text-shadow: none;
+  letter-spacing: 2px;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(128, 128, 128, 0.8);
+  text-shadow: none;
+  letter-spacing: 2px;
 }
 
 .contact-us-section
@@ -676,11 +700,14 @@ button:focus {
   .input-name:focus,
 .input-email:focus,
 .textarea-message:focus {
-  background: rgb(255, 255, 255, 0.8);
-  border: 2px solid rgb(128, 128, 128);
-  border-radius: 8px;
+  /* background: rgb(255, 255, 255, 0.8); */
+  background: #fff;
+  box-shadow: 0 0 12px rgb(128, 128, 128);
+  border-bottom: none;
+  border-radius: 5px;
   color: #333;
   text-shadow: none;
+  outline: none;
 }
 
 .contact-us-section
@@ -699,13 +726,26 @@ button:focus {
   .contact-us-container
   div
   .form-container
+  .textarea-message:focus {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container
   button {
   width: 50%;
   padding: 10px;
+  margin: 10px 0;
   font-size: 16px;
   font-weight: bold;
   filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-shadow: none;
   background: #fff;
   color: rgb(0, 0, 0, 0.8);
@@ -722,6 +762,7 @@ button:focus {
   .form-container
   button:hover {
   background: rgb(0, 0, 0, 0.8);
+  border: 2px solid rgb(128, 128, 128);
   color: #fff;
 }
 
