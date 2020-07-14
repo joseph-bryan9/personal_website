@@ -5,11 +5,8 @@
   box-sizing: border-box;
   font-family: var(--opensans);
   letter-spacing: 2px;
-  /* line-height: 32px; */
   color: var(--primary-font);
   text-decoration: none;
-  /* text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4); */
-  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* Font */
@@ -51,6 +48,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* Header Section */
@@ -292,6 +290,95 @@ body {
   }
 }
 
+/* About Me Section */
+.about-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-section .about-content-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 95vh;
+}
+
+.about-section .about-content-flexbox h1 {
+  margin: 15px 0 25px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.about-section .about-content-flexbox .about-container p {
+  padding: 5px 0 20px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+.about-section .about-content-flexbox .about-container span:nth-child(1) {
+  font-weight: 600;
+  color: rgb(54, 149, 231, 0.9);
+}
+
+.about-section .about-content-flexbox .about-container span:nth-child(2) {
+  font-weight: 600;
+  color: rgb(255, 165, 0, 0.9);
+}
+
+.about-section .about-content-flexbox .about-container span:nth-child(3) {
+  font-weight: 600;
+  color: rgb(255, 215, 0, 0.9);
+}
+
+.about-section .about-content-flexbox .about-container {
+  /* background: rgb(221, 213, 213, 0.7); */
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* about-section - Scroll Down button styles  */
+.about-section .flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.about-section .flexbox .scroll-down {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
+  animation: updown 5s ease-in-out infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(25%);
+  }
+
+  100% {
+    transform: translateY(-25%);
+  }
+}
+
 /* Projects Section */
 .project-section {
   position: relative;
@@ -349,8 +436,8 @@ body {
 }
 
 .project-section .project-content-flexbox .project-container-2 p {
-  line-height: 1.6;
-  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 3px;
 }
 
 .project-section .project-content-flexbox .project-container-2 div {
@@ -766,6 +853,32 @@ button:focus {
   color: #fff;
 }
 
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container
+  button
+  > i {
+  color: rgb(0, 0, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 7px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.contact-us-section
+  .contact-us-content-flexbox
+  .contact-us-container
+  div
+  .form-container
+  button:hover
+  > i {
+  color: #fff;
+}
+
 /* Contact Us - Scroll Down button styles  */
 .contact-us-section .flexbox {
   display: flex;
@@ -816,3 +929,338 @@ footer p {
   text-align: center;
   font-size: 13px;
 }
+
+/* Media Queries */
+/* 321px tp 480px  Screen Size */
+/* Showcase Section */
+@media only screen and (min-width: 320px) {
+  .showcase-section .showcase-content-flexbox {
+    height: 85vh;
+  }
+
+  .showcase-section .showcase-content-flexbox .slogan > p {
+    font-size: 5vw;
+  }
+
+  .showcase-section .showcase-content-flexbox .slogan > h1 {
+    font-size: 10.5vw;
+  }
+
+  .showcase-section .showcase-content-flexbox .social-medias {
+    top: 65vh;
+  }
+
+  .showcase-section .showcase-content-flexbox .social-medias > a {
+    margin-bottom: 25px;
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .showcase-section .flexbox {
+    padding: 20px;
+  }
+
+  .fa,
+  .fas {
+    font-size: 20px;
+  }
+
+  /* About Section */
+  .about-section .about-content-flexbox h1 {
+    font-size: 7vw;
+    margin: 35px 0 0;
+  }
+
+  .about-section .about-content-flexbox .about-container p {
+    font-size: 4vw;
+    padding: 5px 0 15px;
+  }
+
+  .about-section .flexbox {
+    padding: 0 20px 20px 0;
+  }
+
+  /* Project Section */
+  .project-section .project-content-flexbox h1 {
+    font-size: 5vw;
+    margin-bottom: 25px;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 h1 {
+    font-size: 4.8vw;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 p {
+    font-size: 4vw;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 div > a {
+    margin: 0 20px;
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .project-section .flexbox {
+    padding: 20px;
+  }
+
+  /* Skills Section */
+  .skills-section .skills-content-flexbox {
+    height: 85vh;
+  }
+
+  .skills-section .skills-content-flexbox h1 {
+    font-size: 5vw;
+    margin: 15px;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container {
+    grid-gap: 0px;
+    padding: 0;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container > div > p {
+    font-size: 3.5vw;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container a {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .skills-section .flexbox {
+    padding: 20px;
+  }
+
+  /* Contact Section */
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div {
+    padding: 30px 0;
+  }
+
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div h1 {
+    font-size: 6vw;
+    padding: 10px 20px;
+  }
+
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div p {
+    font-size: 4vw;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    label {
+    font-size: 4.5vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    label:first-child {
+    margin-top: 5px;
+  }
+
+  ::placeholder {
+    font-size: 4.5vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    .input-name,
+  .input-email,
+  .textarea-message {
+    width: 100%;
+    font-size: 4.5vw;
+    margin: 5px 0 25px;
+    padding: 10px 5px;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    button {
+    width: 45%;
+  }
+
+  .contact-us-section .flexbox {
+    padding: 0 20px 20px;
+  }
+
+  /* Footer Section */
+  footer p {
+    font-size: 3.5vw;
+  }
+}
+
+/* 481px to 599px Screen Size */
+@media only screen and (min-width: 481px) {
+  /* Header Section */
+  .header-section {
+    padding: 20px 40px;
+  }
+
+  /* Showcase Section */
+  .showcase-section {
+    padding: 20px 40px;
+  }
+
+  .showcase-section .showcase-content-flexbox .slogan > p {
+    font-size: 5vw;
+  }
+
+  .showcase-section .showcase-content-flexbox .slogan > h1 {
+    font-size: 12.5vw;
+    width: 100%;
+  }
+
+  .showcase-section .showcase-content-flexbox .social-medias {
+    top: 68vh;
+  }
+
+  .fa,
+  .fas {
+    font-size: 25px;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 20px 40px;
+  }
+
+  .about-section .about-content-flexbox h1 {
+    font-size: 6vw;
+  }
+
+  .about-section .about-content-flexbox .about-container p {
+    font-size: 4vw;
+    line-height: 1.4;
+    padding: 5px 0 20px;
+  }
+
+  /* Project Section */
+  .project-section {
+    padding: 20px 40px;
+  }
+
+  .project-section .project-content-flexbox h1 {
+    font-size: 5.5vw;
+    margin-bottom: 30px;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 {
+    margin-top: 15px;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 h1 {
+    font-size: 4vw;
+    margin: 15px 0 20px;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 p {
+    font-size: 3.5vw;
+    margin: 15px 0;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 div > a {
+    margin: 0 20px;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /* Skills Section */
+  .skills-section {
+    padding: 20px 40px;
+  }
+
+  .skills-section .skills-content-flexbox h1 {
+    font-size: 4.5vw;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container {
+    padding: 20px 0;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container > div > p {
+    font-size: 3.5vw;
+  }
+
+  /* Contact Section */
+  .contact-us-section {
+    padding: 20px 40px;
+  }
+
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div h1 {
+    font-size: 5vw;
+  }
+
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div p {
+    font-size: 3.5vw;
+    padding: 20px;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    label {
+    font-size: 4.5vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    label:first-child {
+    margin-top: 10px;
+  }
+
+  ::placeholder {
+    font-size: 3.5vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    .input-name,
+  .input-email,
+  .textarea-message {
+    width: 100%;
+    font-size: 3.5vw;
+  }
+
+  /* Footer Section */
+  footer p {
+    font-size: 3vw;
+  }
+}
+
+/* 600px to 767px Screen Size */
+
+/* 768 to 860px  Screen Size*/
+
+/* 861px to 1024px Screen Size */
+
+/* 1025px to 1200px Screen Size */
+
+/* 1201px to 1280px Screen Size */
+
+/* 1281px to 1480px Screen Size */
+
+/* 1450px upwards Screen Size */
+
+/* 1581px upwards Screen Size */

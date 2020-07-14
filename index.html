@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
+    <link rel="stylesheet" href="aos/aos.css" />
   </head>
   <body>
     <!-- Default Mobile-first -->
@@ -70,8 +71,43 @@
         </div>
         <div class="flexbox">
           <a
-            href="#project-1"
+            href="#about-me"
             class="scroll-down animate__animated animate__bounceInRight animate__delay-1s animate__slower 1s"
+            ><i class="fa fa-chevron-down" aria-hidden="true"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about-me" class="about-section">
+        <div
+          class="about-content-flexbox"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
+          <h1>About me</h1>
+          <div class="about-container">
+            <p>Hello! I'm Joseph, a developer based in the Philippines.</p>
+            <p>
+              I've always been fascinated about the possibilities of building
+              almost anything through technology.
+            </p>
+            <p>
+              I love creating things that live on the Web. A goal that I'm
+              always aiming for.
+            </p>
+            <p>
+              And yes! To build ideas into working artworks, from
+              <span>designing</span> to <span>coding</span>, up to the
+              <span>World Wide Web</span>, that is my purpose.
+            </p>
+          </div>
+        </div>
+
+        <div class="flexbox">
+          <a
+            href="#project-1"
+            class="scroll-down animate__animated animate__bounceInRight animate__delay-1s"
             ><i class="fa fa-chevron-down" aria-hidden="true"></i
           ></a>
         </div>
@@ -80,7 +116,11 @@
       <!-- Projects Section -->
       <!-- Project One -->
       <section id="project-1" class="project-section">
-        <div class="project-content-flexbox">
+        <div
+          class="project-content-flexbox"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
           <h1>Some things I've built,</h1>
           <div class="project-container">
             <a href=""><img src="assets/project-1.png" alt="" /></a>
@@ -109,7 +149,11 @@
 
       <!-- Project Two -->
       <section id="project-2" class="project-section">
-        <div class="project-content-flexbox">
+        <div
+          class="project-content-flexbox"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
           <h1>Some things I've built,</h1>
           <div class="project-container">
             <a href=""><img src="assets/project-2.png" alt="" /></a>
@@ -138,7 +182,11 @@
 
       <!-- Project Three -->
       <section id="project-3" class="project-section">
-        <div class="project-content-flexbox">
+        <div
+          class="project-content-flexbox"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
           <h1>Some things I've built,</h1>
           <div class="project-container">
             <a href=""><img src="assets/project-3.png" alt="" /></a>
@@ -168,8 +216,14 @@
       <!-- Skills Section -->
       <section id="skills" class="skills-section">
         <div class="skills-content-flexbox">
-          <h1>Recent technologies I've been working with,</h1>
-          <div class="skills-container">
+          <h1 data-aos="fade-up" data-aos-anchor-placement="top-center">
+            Recent technologies I've been working with,
+          </h1>
+          <div
+            class="skills-container"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <div>
               <a href="javascript:void(0)" class="git-logo"></a>
               <p>Git</p>
@@ -232,7 +286,11 @@
       <!-- Contact Us Section-->
       <section id="contact-us" class="contact-us-section">
         <div class="contact-us-content-flexbox">
-          <div class="contact-us-container">
+          <div
+            class="contact-us-container"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <div>
               <h1>Get In Touch</h1>
               <p>Let's build something awesome today!</p>
@@ -256,7 +314,7 @@
                   placeholder="Tell me about your project, needs, and timeline."
                 ></textarea>
                 <button type="submit">
-                  Send <i class="icon-arrow-right"></i>
+                  Send <i class="fas fa-caret-right" aria-hidden="true"></i>
                 </button>
               </form>
             </div>
@@ -278,13 +336,20 @@
     </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="aos/aos.js"></script>
     <script>
       var scroll = new SmoothScroll(
-        'a[href="#project-1"], a[href="#project-2"], a[href="#project-3"], a[href="#skills"], a[href="#contact-us"], a[href="#home"]',
+        'a[href="#about-me"], a[href="#project-1"], a[href="#project-2"], a[href="#project-3"], a[href="#skills"], a[href="#contact-us"], a[href="#home"]',
         {
           speed: 800,
         }
       );
+    </script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1500,
+      });
     </script>
   </body>
 </html>
