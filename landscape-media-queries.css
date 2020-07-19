@@ -1,0 +1,21 @@
+/* Media Queries for Landscape Orientation (Mobile, Tablets) */
+
+/* 568px to 666px Screen Size */
+@media only screen and (min-width: 568px) and (orientation: landscape) {
+}
+
+/* 667px to 735px Screen Size */
+@media only screen and (min-width: 667px) and (orientation: landscape) {
+}
+
+/* 736px to 811px Screen Size */
+@media only screen and (min-width: 736px) and (orientation: landscape) {
+}
+
+/* 812px to 1023px Screen Size */
+@media only screen and (min-width: 812px) and (orientation: landscape) {
+}
+
+/* 1024px to 1023px Screen Size */
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+}
