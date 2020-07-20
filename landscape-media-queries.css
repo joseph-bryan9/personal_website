@@ -2,6 +2,145 @@
 
 /* 568px to 666px Screen Size */
 @media only screen and (min-width: 568px) and (orientation: landscape) {
+  /* Header Section */
+  .header-section .logo > a > img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .header-section .burger-menu {
+    width: 25px;
+  }
+
+  /* Showcase Section */
+  .showcase-section .showcase-content-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 85vh;
+  }
+
+  .showcase-section .showcase-content-flexbox .slogan > p {
+    font-size: 2.5vw;
+    padding-bottom: 15px;
+  }
+
+  .showcase-section .showcase-content-flexbox .slogan > h1 {
+    font-size: 6vw;
+    width: 70%;
+  }
+
+  .showcase-section .showcase-content-flexbox .social-medias {
+    top: 5vh;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .showcase-section .showcase-content-flexbox .social-medias > a {
+    margin-bottom: 15px;
+    width: 19px;
+    height: 19px;
+  }
+
+  .showcase-section .flexbox {
+    padding: 0;
+  }
+
+  .fa,
+  .fas {
+    font-size: 19px;
+  }
+
+  /* About Section */
+  .about-section .about-content-flexbox {
+    height: 85vh;
+  }
+
+  .about-section .about-content-flexbox h1 {
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  .about-section .about-content-flexbox .about-container {
+    padding-bottom: 0;
+  }
+
+  .about-section .about-content-flexbox .about-container p {
+    font-size: 2vw;
+    line-height: 15px;
+    padding: 0;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .about-section .flexbox {
+    padding: 0;
+  }
+
+  /* Project Section */
+  .project-section .project-content-flexbox {
+    height: 85vh;
+  }
+
+  .project-section .project-content-flexbox h1 {
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  .project-section .project-content-flexbox .project-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 h1 {
+    font-size: 2.5vw;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 p {
+    font-size: 2vw;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 {
+    margin: 10px;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 div {
+    padding-top: 0;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 div > a {
+    width: 19px;
+    height: 19px;
+    margin: 0 15px;
+  }
+
+  .project-section .flexbox {
+    padding: 0;
+  }
+
+  /* Skills Section */
+  .skills-section .skills-content-flexbox h1 {
+    font-size: 3vw;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .skills-section .skills-content-flexbox .skills-container a {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container > div > p {
+    font-size: 2.5vw;
+  }
+
+  .skills-section .flexbox {
+    padding: 0;
+  }
 }
 
 /* 667px to 735px Screen Size */
