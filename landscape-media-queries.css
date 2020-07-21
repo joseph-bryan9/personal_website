@@ -1,7 +1,7 @@
 /* Media Queries for Landscape Orientation (Mobile, Tablets) */
 
 /* 568px to 666px Screen Size */
-@media only screen and (min-width: 568px) and (orientation: landscape) {
+@media only screen and (min-device-width: 568px) and (orientation: landscape) {
   /* Header Section */
   .header-section .logo > a > img {
     width: 25px;
@@ -96,6 +96,7 @@
 
   .project-section .project-content-flexbox .project-container-2 h1 {
     font-size: 2.5vw;
+    text-align: center;
   }
 
   .project-section .project-content-flexbox .project-container-2 p {
@@ -129,6 +130,10 @@
     grid-template-columns: repeat(6, 1fr);
   }
 
+  .skills-section .skills-content-flexbox {
+    align-items: center;
+  }
+
   .skills-section .skills-content-flexbox .skills-container a {
     width: 2.3rem;
     height: 2.3rem;
@@ -141,20 +146,380 @@
   .skills-section .flexbox {
     padding: 0;
   }
+
+  /* Contact Section */
+  .contact-us-section .contact-us-content-flexbox {
+    height: 85vh;
+  }
+
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div h1 {
+    font-size: 3vw;
+    position: absolute;
+    margin-top: 7px;
+  }
+
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div p {
+    font-size: 3vw;
+    grid-column-start: 1;
+    top: 13vh;
+    position: relative;
+    text-align: left;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container {
+    padding: 0 20px;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    label {
+    font-size: 2.7vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    label:first-child {
+    margin-top: 10px;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    .input-name,
+  .input-email,
+  .textarea-message,
+  ::placeholder {
+    font-size: 1.8vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    .input-name,
+  .input-email,
+  .textarea-message {
+    margin: 0 0 15px;
+    padding: 5px 5px;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    button {
+    width: 40%;
+    font-size: 2.2vw;
+    padding: 6px;
+    margin: 0;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    button
+    > i {
+    font-size: 2.2vw;
+  }
+
+  .contact-us-section .flexbox {
+    padding: 0;
+  }
+
+  /* Footer Section */
+  footer p {
+    font-size: 2vw;
+  }
 }
 
 /* 667px to 735px Screen Size */
-@media only screen and (min-width: 667px) and (orientation: landscape) {
+@media only screen and (min-device-width: 667px) and (orientation: landscape) {
 }
 
 /* 736px to 811px Screen Size */
-@media only screen and (min-width: 736px) and (orientation: landscape) {
+@media only screen and (min-device-width: 736px) and (orientation: landscape) {
 }
 
 /* 812px to 1023px Screen Size */
-@media only screen and (min-width: 812px) and (orientation: landscape) {
+@media only screen and (min-device-width: 812px) and (orientation: landscape) {
+  /* Header Section */
+  .header-section {
+    padding: 35px 70px;
+  }
+
+  /* Showcase Section */
+  .showcase-section .showcase-content-flexbox .slogan > p {
+    padding: 25px 0 15px;
+  }
+
+  .showcase-section .showcase-content-flexbox .social-medias > a {
+    width: 23px;
+    height: 23px;
+  }
+
+  /* About Section */
+  .about-section {
+    height: 100vh;
+  }
+
+  .about-section .about-content-flexbox .about-container p {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .about-section .flexbox {
+    display: block;
+    text-align: right;
+  }
+
+  /* Project Section */
+  .project-section {
+    height: 100vh;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 div > a {
+    width: 23px;
+    height: 23px;
+  }
+
+  .project-section .hide-element {
+    display: block;
+    text-align: right;
+  }
+
+  /* Skills Section */
+  .skills-section .skills-content-flexbox h1 {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container > div > p {
+    font-size: 2vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    label {
+    font-size: 2vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    label:first-child {
+    margin-top: 15px;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    .input-name,
+  .input-email,
+  .textarea-message {
+    margin: 5px 0 20px;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    button {
+    font-size: 2vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    button
+    > i {
+    font-size: 2vw;
+  }
+
+  /* Footer Section */
+  footer p {
+    font-size: 1.5vw;
+  }
 }
 
-/* 1024px to 1023px Screen Size */
-@media only screen and (min-width: 1024px) and (orientation: landscape) {
+/* 1024px to 1365px Screen Size */
+@media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  /* Header Section */
+  .header-section .logo > a > img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .fa,
+  .fas {
+    font-size: 25px;
+  }
+
+  /* Showcase Section */
+  .showcase-section .showcase-content-flexbox {
+    height: 90vh;
+  }
+
+  .showcase-section .showcase-content-flexbox .social-medias > a {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  /* About Section */
+  .about-section .about-content-flexbox .about-container p {
+    line-height: 30px;
+  }
+
+  /* Project Section */
+  .project-section .project-content-flexbox .project-content-grid {
+    margin-top: 35px;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 h1 {
+    text-align: right;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 div > a {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 15px;
+  }
+
+  /* Skills Section */
+  .skills-section .skills-content-flexbox .skills-container {
+    padding: 30px 0;
+  }
+
+  .skills-section .skills-content-flexbox .skills-container a {
+    width: 4.3rem;
+    height: 4.3rem;
+  }
+
+  /* Contact Section */
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    .input-name,
+  .input-email,
+  .textarea-message {
+    margin: 15px 0 40px;
+  }
+
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div p {
+    line-height: 1.4;
+    top: 7vh;
+  }
+}
+
+/* 1366px to px Screen Size */
+@media only screen and (min-device-width: 1366px) and (orientation: landscape) {
+  /* Header Section */
+  .header-section {
+    padding: 50px 70px;
+  }
+
+  .header-section .logo > a > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Showcase Section */
+  .showcase-section .showcase-content-flexbox .social-medias > a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 45px;
+  }
+
+  .fa,
+  .fas {
+    font-size: 35px;
+  }
+
+  /* About Section */
+  .about-section .about-content-flexbox .about-container p {
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  /* Project Section */
+  .project-section .project-content-flexbox .project-container-2 p {
+    line-height: 1.5;
+  }
+
+  .project-section .project-content-flexbox .project-container-2 div > a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 25px;
+  }
+
+  #project-2 .project-content-flexbox h1 {
+    visibility: visible;
+  }
+
+  /* Skills Section */
+  .skills-section .skills-content-flexbox .skills-container {
+    padding: 50px 0;
+  }
+
+  /* Contact Section */
+  .contact-us-section .contact-us-content-flexbox .contact-us-container div p {
+    top: 3vh;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    button {
+    font-size: 1.7vw;
+  }
+
+  .contact-us-section
+    .contact-us-content-flexbox
+    .contact-us-container
+    div
+    .form-container
+    button
+    > i {
+    font-size: 1.7vw;
+  }
+
+  /* Footer Section */
+  footer p {
+    font-size: 1.7vw;
+  }
 }
